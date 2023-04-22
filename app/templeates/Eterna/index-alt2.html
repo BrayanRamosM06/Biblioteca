@@ -1,7 +1,3 @@
-<?php
-    include('app/config/config.php');
-    include('app/config/conexion.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,16 +10,16 @@
 
   <!-- css -->
   <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/bootstrap.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/bootstrap-responsive.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/flexslider.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/prettyPhoto.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/camera.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/css/style.css" rel="stylesheet" />
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <link href="css/camera.css" rel="stylesheet" />
+  <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
   <!-- Theme skin -->
-  <link href="<?php echo $url; ?>/app/templeates/Eterna/color/default.css" rel="stylesheet" />
+  <link href="color/default.css" rel="stylesheet" />
 
   <!-- Fav and touch icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
@@ -43,6 +39,7 @@
 <body>
 
   <div id="wrapper">
+
 
     <!-- start header -->
     <header>
@@ -73,7 +70,7 @@
         <div class="row nomargin">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="<?php echo $url; ?>/app/templeates/Eterna/img/logo.png" alt="" /></a>
+              <a href="index.html"><img src="img/logo.png" alt="" /></a>
             </div>
           </div>
           <div class="span8">
@@ -157,7 +154,7 @@
       <div class="camera_wrap" id="camera-slide">
 
         <!-- slide 1 here -->
-        <div data-src="<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide1/img1.jpg">
+        <div data-src="img/slides/camera/slide1/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
@@ -172,7 +169,7 @@
 										</a>
                 </div>
                 <div class="span6">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
+                  <img src="img/slides/camera/slide1/screen.png" alt="" class="animated bounceInDown delay1" />
                 </div>
               </div>
             </div>
@@ -180,12 +177,12 @@
         </div>
 
         <!-- slide 2 here -->
-        <div data-src="<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide2/img1.jpg">
+        <div data-src="img/slides/camera/slide2/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
                 <div class="span6">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide2/iMac.png" alt="" />
+                  <img src="img/slides/camera/slide2/iMac.png" alt="" />
                 </div>
                 <div class="span6">
                   <h2 class="animated fadeInDown"><strong>Put your <span class="colored">Opt in form</span></strong></h2>
@@ -204,14 +201,14 @@
         </div>
 
         <!-- slide 3 here -->
-        <div data-src="<?php echo $url; ?>/app/templeates/Eterna/<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide2/img1.jpg">
+        <div data-src="img/slides/camera/slide2/img1.jpg">
           <div class="camera_caption fadeFromLeft">
             <div class="container">
               <div class="row">
                 <div class="span12 aligncenter">
                   <h2 class="animated fadeInDown"><strong><span class="colored">Responsive</span> and <span class="colored">cross broswer</span> compatibility</strong></h2>
                   <p class="animated fadeInUp">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/slides/camera/slide3/browsers.png" alt="" class="animated bounceInDown delay1" />
+                  <img src="img/slides/camera/slide3/browsers.png" alt="" class="animated bounceInDown delay1" />
                 </div>
               </div>
             </div>
@@ -230,51 +227,52 @@
 
 
         <div class="row">
-          <div class="span12">
-            <div class="row">
-              <div class="span4">
-                <div class="box flyLeft">
-                  <div class="icon">
-                    <i class="ico icon-circled icon-bgdark icon-star active icon-3x"></i>
-                  </div>
-                  <div class="text">
-                    <h4>High <strong>Quality</strong></h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
-                    </p>
-                    <a href="#">Learn More</a>
-                  </div>
-                </div>
-              </div>
 
-              <div class="span4">
-                <div class="box flyIn">
-                  <div class="icon">
-                    <i class="ico icon-circled icon-bgdark icon-dropbox active icon-3x"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Rich of <strong>Features</strong></h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
-                    </p>
-                    <a href="#">Learn More</a>
-                  </div>
-                </div>
+          <div class="span3">
+            <div class="service-box aligncenter flyLeft">
+              <div class="icon">
+                <i class="icon-circled icon-bgprimary icon-code icon-4x"></i>
               </div>
-              <div class="span4">
-                <div class="box flyRight">
-                  <div class="icon">
-                    <i class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
-                  </div>
-                  <div class="text">
-                    <h4>Modern <strong>Design</strong></h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
-                    </p>
-                    <a href="#">Learn More</a>
-                  </div>
-                </div>
+              <h5>Custom <span class="colored">CMS</span></h5>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+              </p>
+
+            </div>
+          </div>
+          <div class="span3">
+            <div class="service-box aligncenter flyIn">
+              <div class="icon">
+                <i class="icon-circled icon-bgsuccess icon-cloud icon-4x"></i>
               </div>
+              <h5>Cloud <span class="colored">Hosting</span></h5>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+              </p>
+
+            </div>
+          </div>
+          <div class="span3">
+            <div class="service-box aligncenter flyIn">
+              <div class="icon">
+                <i class="icon-circled icon-bgdanger icon-mobile-phone icon-4x"></i>
+              </div>
+              <h5>Mobile <span class="colored">Application</span></h5>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+              </p>
+
+            </div>
+          </div>
+          <div class="span3">
+            <div class="service-box aligncenter flyRight">
+              <div class="icon">
+                <i class="icon-circled icon-bgwarning icon-envelope-alt icon-4x"></i>
+              </div>
+              <h5>Viral <span class="colored">Marketing</span></h5>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+              </p>
 
             </div>
           </div>
@@ -282,124 +280,25 @@
 
         <div class="row">
           <div class="span12">
-            <div class="solidline"></div>
+            <div class="cta-box">
+              <div class="row">
+                <div class="span8">
+                  <div class="cta-text">
+                    <h2>Special price in very <span>limited</span> times</h2>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="cta-btn">
+                    <a href="#" class="btn btn-theme">Get a quote <i class="icon-angle-right"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="span12">
-            <div class="row">
-              <div class="span12">
-                <div class="aligncenter">
-                  <h3>Our <strong>Pricing</strong></h3>
-                  <p>Lorem ipsum dolor sit amet, labores dolorum scriptorem eum an, te quodsi sanctus neglegentur.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="row">
-
-              <div class="span3">
-                <div class="pricing-box-wrap animated-fast flyIn">
-                  <div class="pricing-heading">
-                    <h3>Very <strong>Basic</strong></h3>
-                  </div>
-                  <div class="pricing-terms">
-                    <h6>&#36;15.00 / Month</h6>
-                  </div>
-                  <div class="pricing-content">
-                    <ul>
-                      <li><i class="icon-ok"></i> 100 applications</li>
-                      <li><i class="icon-ok"></i> 24x7 support available</li>
-                      <li><i class="icon-ok"></i> No hidden fees</li>
-                      <li><i class="icon-ok"></i> Free 30-days trial</li>
-                      <li><i class="icon-ok"></i> Stop anytime easily</li>
-                    </ul>
-                  </div>
-                  <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="span3">
-                <div class="pricing-box-wrap animated-fast flyIn">
-                  <div class="pricing-heading">
-                    <h3>Simple <strong>Choice</strong></h3>
-                  </div>
-                  <div class="pricing-terms">
-                    <h6>&#36;20.00 / Month</h6>
-                  </div>
-                  <div class="pricing-content">
-                    <ul>
-                      <li><i class="icon-ok"></i> 100 applications</li>
-                      <li><i class="icon-ok"></i> 24x7 support available</li>
-                      <li><i class="icon-ok"></i> No hidden fees</li>
-                      <li><i class="icon-ok"></i> Free 30-days trial</li>
-                      <li><i class="icon-ok"></i> Stop anytime easily</li>
-                    </ul>
-                  </div>
-                  <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="span3">
-                <div class="pricing-box-wrap special animated-slow flyIn">
-                  <div class="pricing-heading">
-                    <h3>Special <strong>Choice</strong></h3>
-                  </div>
-                  <div class="pricing-terms">
-                    <h6>&#36;15.00 / Month</h6>
-                  </div>
-                  <div class="pricing-content">
-                    <ul>
-                      <li><i class="icon-ok"></i> 100 applications</li>
-                      <li><i class="icon-ok"></i> 24x7 support available</li>
-                      <li><i class="icon-ok"></i> No hidden fees</li>
-                      <li><i class="icon-ok"></i> Free 30-days trial</li>
-                      <li><i class="icon-ok"></i> Stop anytime easily</li>
-                    </ul>
-                  </div>
-                  <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="span3">
-                <div class="pricing-box-wrap animated flyIn">
-                  <div class="pricing-heading">
-                    <h3>Just <strong>Happy</strong></h3>
-                  </div>
-                  <div class="pricing-terms">
-                    <h6>&#36;15.00 / Month</h6>
-                  </div>
-                  <div class="pricing-content">
-                    <ul>
-                      <li><i class="icon-ok"></i> 100 applications</li>
-                      <li><i class="icon-ok"></i> 24x7 support available</li>
-                      <li><i class="icon-ok"></i> No hidden fees</li>
-                      <li><i class="icon-ok"></i> Free 30-days trial</li>
-                      <li><i class="icon-ok"></i> Stop anytime easily</li>
-                    </ul>
-                  </div>
-                  <div class="pricing-action">
-                    <a href="#" class="btn btn-medium btn-theme"><i class="icon-chevron-down"></i> Sign Up</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-        </div>
-
-
 
         <div class="row">
           <div class="span12 aligncenter">
@@ -413,7 +312,7 @@
                   feugiat
                 </blockquote>
                 <div class="testimonial-autor">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/testimonial/1.png" alt="" />
+                  <img src="img/dummies/testimonial/1.png" alt="" />
                   <h4>Hillary Doe</h4>
                   <a href="#">www.companyname.com</a>
                 </div>
@@ -424,7 +323,7 @@
                   feugiat
                 </blockquote>
                 <div class="testimonial-autor">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/testimonial/2.png" alt="" />
+                  <img src="img/dummies/testimonial/2.png" alt="" />
                   <h4>Michael Doe</h4>
                   <a href="#">www.companyname.com</a>
                 </div>
@@ -435,7 +334,7 @@
                   feugiat
                 </blockquote>
                 <div class="testimonial-autor">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/testimonial/3.png" alt="" />
+                  <img src="img/dummies/testimonial/3.png" alt="" />
                   <h4>Mark Donovan</h4>
                   <a href="#">www.companyname.com</a>
                 </div>
@@ -446,7 +345,7 @@
                   feugiat
                 </blockquote>
                 <div class="testimonial-autor">
-                  <img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/testimonial/4.png" alt="" />
+                  <img src="img/dummies/testimonial/4.png" alt="" />
                   <h4>Marry Doe Elliot</h4>
                   <a href="#">www.companyname.com</a>
                 </div>
@@ -471,11 +370,11 @@
                 <div class="span3">
                   <div class="item">
                     <figure>
-                      <div><img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/1.jpg" alt="" /></div>
+                      <div><img src="img/dummies/works/1.jpg" alt="" /></div>
                       <figcaption>
                         <div>
                           <span>
-								<a href="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
 								</span>
                           <span>
 								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
@@ -488,11 +387,11 @@
                 <div class="span3">
                   <div class="item">
                     <figure>
-                      <div><img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/2.jpg" alt="" /></div>
+                      <div><img src="img/dummies/works/2.jpg" alt="" /></div>
                       <figcaption>
                         <div>
                           <span>
-								<a href="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
 								</span>
                           <span>
 								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
@@ -505,11 +404,11 @@
                 <div class="span3">
                   <div class="item">
                     <figure>
-                      <div><img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/3.jpg" alt="" /></div>
+                      <div><img src="img/dummies/works/3.jpg" alt="" /></div>
                       <figcaption>
                         <div>
                           <span>
-								<a href="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
 								</span>
                           <span>
 								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
@@ -522,11 +421,11 @@
                 <div class="span3">
                   <div class="item">
                     <figure>
-                      <div><img src="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/4.jpg" alt="" /></div>
+                      <div><img src="img/dummies/works/4.jpg" alt="" /></div>
                       <figcaption>
                         <div>
                           <span>
-								<a href="<?php echo $url; ?>/app/templeates/Eterna/img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+								<a href="img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
 								</span>
                           <span>
 								<a href="#"><i class="icon-file icon-circled icon-bglight icon-2x"></i></a>
@@ -622,27 +521,30 @@
   <!-- javascript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/jquery.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/jquery.easing.1.3.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
 
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/modernizr.custom.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/toucheffects.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/google-code-prettify/prettify.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/jquery.bxslider.min.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/camera/camera.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/camera/setting.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/toucheffects.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/camera/camera.js"></script>
+  <script src="js/camera/setting.js"></script>
 
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/jquery.prettyPhoto.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/portfolio/jquery.quicksand.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/portfolio/setting.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
 
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/jquery.flexslider.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/animate.js"></script>
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/inview.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/inview.js"></script>
 
   <!-- Template Custom JavaScript File -->
-  <script src="<?php echo $url; ?>/app/templeates/Eterna/js/custom.js"></script>
+  <script src="js/custom.js"></script>
+
+
 
 </body>
+
 </html>
