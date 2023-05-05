@@ -6,17 +6,15 @@
  * Time: 10.25 a.m
  * 
  * **/
-//include('config.php');
+include('config.php');
 
-$servidor = "mysql:dbname = ".DB_SISTEM."; host=".DB_SERVIDOR;
+$servidor = new mysqli(DB_SERVIDOR,DB_USUARIO,DB_PASSWORD,DB_SISTEM);
 
-
-try{
-    $pdo = new PDO($servidor, DB_USUARIO, DB_PASSWORD);
-    //echo "<script>alert('Conexion exitosa a la base de datos');</script>";
-
-}catch(PDOException $e){
-  echo "No se pudo hacer la conexión a labase de datos".$e;  
+if($servidor->connect_errno){
+  echo("<script>alert('No se pudo establecer la conección')</script>");
+  exit();
 }
+//echo("<script>alert('Coneccion exitosa')</script>");
+
 
 ?>
