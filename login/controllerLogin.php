@@ -25,13 +25,15 @@ if ($renglones > 0){
 }
 if($user != $correo){
     echo("<script>alert('El correo incorrecto')</script>");
+    header('Location:'.$url.'/login');
 
 }elseif($password != $pass) {
      echo("<script>alert('La contraseña es incorrecto')</script>");
+     header('Location:'.$url.'/login');
 }else{
-
+        session_start();
+        $_SESSION['sesion_email'] = $correo;
+        header('Location:'.$url.'/admin');
     }
-
-
-
 ?>
+
